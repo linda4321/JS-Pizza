@@ -1,0 +1,74 @@
+.main-page{
+  width: inherit;
+  height: 600px;
+  display: inline-block;
+  //height:inherit;
+  margin-right: @right_panel_width;
+  padding-top: @top_panel_height;
+
+  overflow-y: scroll;
+
+  .menu{
+    height:100px;
+    text-align: center;
+
+    .buttons-container{
+      display: inline-block;
+      text-align: center;
+
+      li{
+        a{
+          color:@mainColor;
+        }
+      }
+      li.active{
+        a{
+          background-color: @mainColor;
+          color:white;
+        }
+      }
+      //margin: 0;
+    }
+
+    .title{
+
+    }
+    .pizza-amount{
+      display: inline-block;
+      border-radius: 100%;
+    }
+  }
+
+}
+//.main_page{
+//  margin-right: @right_panel_width;
+//  margin-top: @top_panel_height;
+//  //overflow-y: scroll;
+//}
+//
+//.menu{
+//  height:100px;
+//}
+//.title{
+//  text-align: center;
+//  padding-top: 10px;
+//
+//  h3{
+//    margin-top: 0;
+//  }
+//  .pizza-amount{
+//    display: inline-block;
+//    border-radius: 100%;
+//  }
+//}
+//
+//.buttons-container{
+//  text-align: center;
+//  width:100%;
+//}
+//
+//
+//#pizza_list{
+//  //margin-right: @right_panel_width;
+//
+//}

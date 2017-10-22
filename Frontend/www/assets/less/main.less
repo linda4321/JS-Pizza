@@ -1,3 +1,58 @@
-@mainColor: blue;
+@right_panel_width:300px;
+@top_panel_height:70px;
+@bottom_panel_height:80px;
+@bookmark_width: 80px;
 
+@mainColor: #f0ad4e;
+//
 @import "pizza/pizza-card";
+@import "right_panel";
+@import "top_panel";
+@import "main_area";
+//
+body{
+  //height: 100%;
+  overflow-y: hidden;
+  //min-width: 1000px;
+}
+.bookmark_builder(@width, @height, @margin){
+  display: inline-block;
+  width: @width;
+  height:@height;
+  margin-left: @margin;
+  position: relative;
+
+  img{
+    width:@width;
+    height:@height;
+  }
+  span{
+    position: absolute;
+    text-align: center;
+    color: white;
+  }
+}
+//
+.bookmark-bottom{
+  .bookmark_builder(@bookmark_width,180px, 10px);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  .text{
+    bottom:30px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    border-bottom: dotted 2px rgba(107, 107, 107, 0.81);
+  }
+  .discount{
+    bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    width:inherit;
+  }
+}
+
+
