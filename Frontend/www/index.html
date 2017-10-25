@@ -18,230 +18,131 @@
 
 <div class="container main-page">
     <!--<div class="main-page">-->
-        <div class="menu">
-            <div class="title">
-                <h3 class="title-span">All pizzas
-                    <span class="label label-warning pizza-amount">3</span>
-                </h3>
-            </div>
+        <div class="main-panel">
+            <div class="menu">
+                <div class="title">
+                    <h3 class="title-span">Усі піци</h3>
+                    <h3 class="label label-warning pizza-amount">8</h3>
+                </div>
 
-            <!--<div class="buttons-container">-->
                 <ul class="nav nav-pills buttons-container">
-                    <li class="active"><a href="#">Усі</a></li>
-                    <li><a href="#">М'ясні</a></li>
-                    <li><a href="#">З ананасами</a></li>
-                    <li><a href="#">З грибами</a></li>
-                    <li><a href="#">З морепродуктами</a></li>
-                    <li><a href="#">Вега</a></li>
+                    <li class="active all"><a href="#">Усі</a></li>
+                    <li class="meat"><a href="#">М'ясні</a></li>
+                    <li class="pineapple"><a href="#">З ананасами</a></li>
+                    <li class="mushroom"><a href="#">З грибами</a></li>
+                    <li class="ocean"><a href="#">З морепродуктами</a></li>
+                    <li class="vega"><a href="#">Вега</a></li>
                 </ul>
-                <!--<div class="btn-group options">-->
-                    <!--<button type="button" class="btn btn-default all">Усі</button>-->
-                    <!--<button class="btn btn-warning meat">Мясні</button>-->
-                    <!--<button class="btn btn-default pineapple">З ананасми</button>-->
-                    <!--<button class="btn btn-default mushrooms">З грибами</button>-->
-                    <!--<button class="btn btn-default seafood">З морепродуктами</button>-->
-                    <!--<button class="btn btn-default vega">Вега</button>-->
-                <!--</div>-->
-            <!--</div>-->
-        </div>
-
-        <div class="row pizza-list">
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail pizza-card">
-                    <img src="assets/images/pizza_1.jpg">
-                    <span class="label label-danger announce">New</span>
-
-                    <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <span class="description">Meat pizza</span>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-                        <div class="row pizza-inf">
-                            <div class="col-xs-6">
-                                <div class="size">
-                                    <img src="assets/images/size-icon.svg">
-                                    <span>30</span>
-                                </div>
-                                <div class="weight">
-                                    <img src="assets/images/weight.svg">
-                                    <span>370</span>
-                                </div>
-
-                                <h3 class="price">99</h3>
-                                <span class="grn">грн</span>
-                                <button class="btn btn-warning">Купити</button>
-                            </div>
-
-                            <div class="col-xs-6">
-                                <div class="size">
-                                    <img src="assets/images/size-icon.svg">
-                                    <span>40</span>
-                                </div>
-                                <div class="weight">
-                                    <img src="assets/images/weight.svg">
-                                    <span>660</span>
-                                </div>
-
-                                <h3 class="price">169</h3>
-                                <span class="grn">грн</span>
-                                <button class="btn btn-warning">Купити</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail pizza-card">
-                    <img src="assets/images/pizza_1.jpg">
-                    <span class="label label-danger announce">New</span>
 
-                    <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <span class="description">Meat pizza</span>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 
-                        <div class="row pizza-inf">
-                            <div class="col-xs-6">
-                                <div class="size">
-                                    <img src="assets/images/size-icon.svg">
-                                    <span>30</span>
-                                </div>
-                                <div class="weight">
-                                    <img src="assets/images/weight.svg">
-                                    <span>370</span>
-                                </div>
+            <div class="row pizza-list" id="pizza_list">
+                <div class="col-md-6 col-lg-4 pizza-card">
+                    <div class="thumbnail ">
+                        <img src="assets/images/pizza_1.jpg">
+                        <span class="label label-danger announce">New</span>
 
-                                <h3 class="price">99</h3>
-                                <span class="grn">грн</span>
-                                <button class="btn btn-warning">Купити</button>
-                            </div>
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <span class="description">Meat pizza</span>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 
-                            <div class="col-xs-6">
-                                <div class="size">
-                                    <img src="assets/images/size-icon.svg">
-                                    <span>40</span>
-                                </div>
-                                <div class="weight">
-                                    <img src="assets/images/weight.svg">
-                                    <span>660</span>
+                            <div class="row pizza-inf">
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="size">
+                                        <img src="assets/images/size-icon.svg">
+                                        <span>30</span>
+                                    </div>
+                                    <div class="weight">
+                                        <img src="assets/images/weight.svg">
+                                        <span>370</span>
+                                    </div>
+
+                                    <h3 class="price">99</h3>
+                                    <span class="grn">грн</span>
+                                    <button class="btn btn-warning buy-small">Купити</button>
                                 </div>
 
-                                <h3 class="price">169</h3>
-                                <span class="grn">грн</span>
-                                <button class="btn btn-warning">Купити</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail pizza-card">
-                    <img src="assets/images/pizza_1.jpg">
-                    <span class="label label-danger announce">New</span>
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="size">
+                                        <img src="assets/images/size-icon.svg">
+                                        <span>40</span>
+                                    </div>
+                                    <div class="weight">
+                                        <img src="assets/images/weight.svg">
+                                        <span>660</span>
+                                    </div>
 
-                    <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <span class="description">Meat pizza</span>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-                        <div class="row pizza-inf">
-                            <div class="col-xs-6">
-                                <div class="size">
-                                    <img src="assets/images/size-icon.svg">
-                                    <span>30</span>
+                                    <h3 class="price">169</h3>
+                                    <span class="grn">грн</span>
+                                    <button class="btn btn-warning buy-big">Купити</button>
                                 </div>
-                                <div class="weight">
-                                    <img src="assets/images/weight.svg">
-                                    <span>370</span>
-                                </div>
-
-                                <h3 class="price">99</h3>
-                                <span class="grn">грн</span>
-                                <button class="btn btn-warning">Купити</button>
-                            </div>
-
-                            <div class="col-xs-6">
-                                <div class="size">
-                                    <img src="assets/images/size-icon.svg">
-                                    <span>40</span>
-                                </div>
-                                <div class="weight">
-                                    <img src="assets/images/weight.svg">
-                                    <span>660</span>
-                                </div>
-
-                                <h3 class="price">169</h3>
-                                <span class="grn">грн</span>
-                                <button class="btn btn-warning">Купити</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail pizza-card">
-                    <img class="pizza-img" src="assets/images/pizza_1.jpg">
-                    <span class="label label-danger announce">New</span>
-
-                    <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <span class="description">Meat pizza</span>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-                        <div class="row pizza-inf">
-                            <div class="col-xs-6">
-                                <div class="size">
-                                    <img src="assets/images/size-icon.svg">
-                                    <span>30</span>
-                                </div>
-                                <div class="weight">
-                                    <img src="assets/images/weight.svg">
-                                    <span>370</span>
-                                </div>
-
-                                <h3 class="price">99</h3>
-                                <span class="grn">грн</span>
-                                <button class="btn btn-warning">Купити</button>
-                            </div>
-
-                            <div class="col-xs-6">
-                                <div class="size">
-                                    <img src="assets/images/size-icon.svg">
-                                    <span>40</span>
-                                </div>
-                                <div class="weight">
-                                    <img src="assets/images/weight.svg">
-                                    <span>660</span>
-                                </div>
-
-                                <h3 class="price">169</h3>
-                                <span class="grn">грн</span>
-                                <button class="btn btn-warning">Купити</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     <!--</div>-->
+</div>
+
+<div class="add-inf">
+    <p>Pizza.22 - практичний проект в межах курсу JavaScript в Києво-Могилянській Академії</p>
+    <p>Доставка піци не здійснюється</p>
+</div>
+
+
+<div class="top-panel-container">
+    <div class="top-panel">
+        <div class="bookmark-top">
+            <img src="assets/images/discount.svg">
+            <span class="text">PIZZA KMA</span>
+        </div>
+
+        <div class="container add_information">
+
+            <div class="row top-inf">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 telephone">(044)222 5 222</div>
+                <div class="col-md-4 col-lg-3 hidden-sm hidden-xs syllabus">24 години/7 днів на тиждень</div>
+                <div class="col-lg-4 hidden-md hidden-sm hidden-xs delivery">Безкоштовна доставка піци</div>
+
+                <div class="sing-in-button col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                    <button class="btn-warning">Sign in</button>
+                </div>
+            </div>
+
+            <div class="row bottom-inf">
+                <span class="col-sm-12 hidden-xs">Pizza</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bookmark-bottom">
+    <img src="assets/images/discount.svg">
+    <span class="text">ЦЬОГО ТИЖНЯ НА ВСЕ</span>
+    <span class="discount">-20%</span>
 </div>
 
 <div class="right-panel">
     <div class="container top-section">
         <div class="row label-section">
-            <h5>Замовлення
+            <h4 class="col-xs-7">Замовлення
                 <span class="label label-warning order-amount">3</span>
-            </h5>
-            <span class="clear">Очистити замовлення</span>
+            </h4>
+            <span class="col-xs-5 clear">Очистити замовлення</span>
         </div>
     </div>
+    <div class="middle-section" id="cart">
 
-    <div class="middle-section">
+        <div class="empty-cart">
+            <p>В холодильнику пусто?</p>
+            <p>Замовляйте піцу!</p>
+        </div>
 
         <div class="ordered-pizza">
             <div class="container ordered-inf">
-                <h3>BBQ (Мала)</h3>
+                <h4>BBQ (Мала)</h4>
                 <div class="row parameters">
                     <span class="col-xs-4">
                         <img src="assets/images/size-icon.svg">
@@ -265,7 +166,7 @@
                             <span class="glyphicon glyphicon-plus"></span>
                         </button>
                     </div>
-                    <button class="col-xs-1 btn btn-xs cross">
+                    <button class="col-xs-1 btn btn-xs btn-default cross">
                         <span class="glyphicon glyphicon-remove"></span>
                     </button>
 
@@ -274,386 +175,24 @@
             </div>
             <img class="pizza-image" src="assets/images/pizza_1.jpg">
         </div>
-        <!--<div class="ordered-pizza">-->
-            <!--<div class="container ordered-inf">-->
-                <!--<h3>BBQ (Мала)</h3>-->
-                <!--<div class="row parameters">-->
-                    <!--<span class="col-ex-4">-->
-                        <!--<img src="assets/images/size-icon.svg">-->
-                        <!--30-->
-                    <!--</span>-->
-
-                    <!--<span class="col-ex-4">-->
-                        <!--<img src="assets/images/weight.svg">-->
-                        <!--370-->
-                    <!--</span>-->
-                <!--</div>-->
-
-                <!--<div class="row buttons">-->
-                    <!--<span class="col-ex-4">556грн</span>-->
-                    <!--<button class="col-ex-3 minus">-</button>-->
-                    <!--<span class="col-ex-3 label-count">4</span>-->
-                    <!--<button class="col-ex-3 plus">+</button>-->
-                    <!--<button class="col-ex-4 cross">x</button>-->
-
-                <!--</div>-->
-
-            <!--</div>-->
-            <!--<img class="pizza-image" src="assets/images/pizza_1.jpg">-->
-        <!--</div>-->
-        <!--<div class="ordered-pizza">-->
-            <!--<div class="container ordered-inf">-->
-                <!--<h3>BBQ (Мала)</h3>-->
-                <!--<div class="row parameters">-->
-                    <!--<span class="col-ex-4">-->
-                        <!--<img src="assets/images/size-icon.svg">-->
-                        <!--30-->
-                    <!--</span>-->
-
-                    <!--<span class="col-ex-4">-->
-                        <!--<img src="assets/images/weight.svg">-->
-                        <!--370-->
-                    <!--</span>-->
-                <!--</div>-->
-
-                <!--<div class="row buttons">-->
-                    <!--<span class="col-ex-4">556грн</span>-->
-                    <!--<button class="col-ex-3 minus">-</button>-->
-                    <!--<span class="col-ex-3 label-count">4</span>-->
-                    <!--<button class="col-ex-3 plus">+</button>-->
-                    <!--<button class="col-ex-4 cross">x</button>-->
-
-                <!--</div>-->
-
-            <!--</div>-->
-            <!--<img class="pizza-image" src="assets/images/pizza_1.jpg">-->
-        <!--</div>-->
-        <!--<div class="ordered-pizza">-->
-            <!--<div class="container ordered-inf">-->
-                <!--<h3>BBQ (Мала)</h3>-->
-                <!--<div class="row parameters">-->
-                    <!--<span class="col-ex-4">-->
-                        <!--<img src="assets/images/size-icon.svg">-->
-                        <!--30-->
-                    <!--</span>-->
-
-                    <!--<span class="col-ex-4">-->
-                        <!--<img src="assets/images/weight.svg">-->
-                        <!--370-->
-                    <!--</span>-->
-                <!--</div>-->
-
-                <!--<div class="row buttons">-->
-                    <!--<span class="col-ex-4">556грн</span>-->
-                    <!--<button class="col-ex-3 minus">-</button>-->
-                    <!--<span class="col-ex-3 label-count">4</span>-->
-                    <!--<button class="col-ex-3 plus">+</button>-->
-                    <!--<button class="col-ex-4 cross">x</button>-->
-
-                <!--</div>-->
-
-            <!--</div>-->
-            <!--<img class="pizza-image" src="assets/images/pizza_1.jpg">-->
-        <!--</div>-->
-        <!--<div class="ordered-pizza">-->
-            <!--<div class="container ordered-inf">-->
-                <!--<h3>BBQ (Мала)</h3>-->
-                <!--<div class="row parameters">-->
-                    <!--<span class="col-ex-4">-->
-                        <!--<img src="assets/images/size-icon.svg">-->
-                        <!--30-->
-                    <!--</span>-->
-
-                    <!--<span class="col-ex-4">-->
-                        <!--<img src="assets/images/weight.svg">-->
-                        <!--370-->
-                    <!--</span>-->
-                <!--</div>-->
-
-                <!--<div class="row buttons">-->
-                    <!--<span class="col-ex-4">556грн</span>-->
-                    <!--<button class="col-ex-3 minus">-</button>-->
-                    <!--<span class="col-ex-3 label-count">4</span>-->
-                    <!--<button class="col-ex-3 plus">+</button>-->
-                    <!--<button class="col-ex-4 cross">x</button>-->
-
-                <!--</div>-->
-
-            <!--</div>-->
-            <!--<img class="pizza-image" src="assets/images/pizza_1.jpg">-->
-        <!--</div>-->
-        <!--<div class="ordered-pizza">-->
-            <!--<div class="container ordered-inf">-->
-                <!--<h3>BBQ (Мала)</h3>-->
-                <!--<div class="row parameters">-->
-                    <!--<span class="col-ex-4">-->
-                        <!--<img src="assets/images/size-icon.svg">-->
-                        <!--30-->
-                    <!--</span>-->
-
-                    <!--<span class="col-ex-4">-->
-                        <!--<img src="assets/images/weight.svg">-->
-                        <!--370-->
-                    <!--</span>-->
-                <!--</div>-->
-
-                <!--<div class="row buttons">-->
-                    <!--<span class="col-ex-4">556грн</span>-->
-                    <!--<button class="col-ex-3 minus">-</button>-->
-                    <!--<span class="col-ex-3 label-count">4</span>-->
-                    <!--<button class="col-ex-3 plus">+</button>-->
-                    <!--<button class="col-ex-4 cross">x</button>-->
-
-                <!--</div>-->
-
-            <!--</div>-->
-            <!--<img class="pizza-image" src="assets/images/pizza_1.jpg">-->
-        <!--</div>-->
-        <!--<div class="ordered-pizza">-->
-            <!--<div class="container ordered-inf">-->
-                <!--<h3>BBQ (Мала)</h3>-->
-                <!--<div class="row parameters">-->
-                    <!--<span class="col-ex-4">-->
-                        <!--<img src="assets/images/size-icon.svg">-->
-                        <!--30-->
-                    <!--</span>-->
-
-                    <!--<span class="col-ex-4">-->
-                        <!--<img src="assets/images/weight.svg">-->
-                        <!--370-->
-                    <!--</span>-->
-                <!--</div>-->
-
-                <!--<div class="row buttons">-->
-                    <!--<span class="col-ex-4">556грн</span>-->
-                    <!--<button class="col-ex-3 minus">-</button>-->
-                    <!--<span class="col-ex-3 label-count">4</span>-->
-                    <!--<button class="col-ex-3 plus">+</button>-->
-                    <!--<button class="col-ex-4 cross">x</button>-->
-
-                <!--</div>-->
-
-            <!--</div>-->
-            <!--<img class="pizza-image" src="assets/images/pizza_1.jpg">-->
-        <!--</div>-->
     </div>
-
     <div class="container bottom-section">
         <div class="row order-area">
             <div class="col-xs-12 order-labels">
                 <h6>Сума замовлення</h6>
-                <h4>924 грн</h4>
+                <h4>
+                    <span class="total-sum">924 </span>
+                    грн
+                </h4>
             </div>
-            <div class="col-xs-12 order-button">
-                <button class="btn btn-warning">Замовити</button>
-            </div>
-        </div>
-    </div>
-
-
-</div>
-
-<div class="top-panel-container">
-    <div class="top-panel">
-        <div class="bookmark-top">
-            <img src="assets/images/discount.svg">
-            <span class="text">PIZZA KMA</span>
-        </div>
-
-        <div class="container add_information">
-            <div class="row top-inf">
-                <div class="col-xs-12 col-sm-4 col-md-3 telephone">(044)222 5 222</div>
-                <div class="col-sm-4 col-md-3 hidden-xs syllabus">24 години/7 днів на тиждень</div>
-                <div class="col-sm-5 col-md-4 hidden-sm hidden-xs delivery">Безкоштовна доставка піци</div>
-
-                <div class="sing-in-button col-xs-12 col-sm-2 col-md-2">
-                    <button class="btn-warning">Sign in</button>
-                </div>
-            </div>
-
-            <div class="row bottom-inf">
-                <span class="col-sm-12 hidden-xs">Pizza</span>
+            <div class="col-xs-12 order-button-div">
+                <button class="btn btn-warning order-button">Замовити</button>
             </div>
         </div>
     </div>
+
+
 </div>
-
-<div class="bookmark-bottom">
-    <img src="assets/images/discount.svg">
-    <span class="text">ЦЬОГО ТИЖНЯ НА ВСЕ</span>
-    <span class="discount">-20%</span>
-</div>
-    <!--<div class="container">-->
-        <!--&lt;!&ndash;<div class="">&ndash;&gt;-->
-        <!--<div class="main_page">-->
-            <!--<div class="menu">-->
-                <!--<div class="title">-->
-                    <!--<h3 class="title-span">All pizzas-->
-                        <!--<span class="label label-warning pizza-amount">3</span>-->
-                    <!--</h3>-->
-                <!--</div>-->
-
-                <!--<div class="buttons-container">-->
-                    <!--<div class="btn-group options">-->
-                        <!--<button type="button" class="btn btn-default all">Усі</button>-->
-                        <!--<button class="btn btn-warning meat">Мясні</button>-->
-                        <!--<button class="btn btn-default pineapple">З ананасми</button>-->
-                        <!--<button class="btn btn-default mushrooms">З грибами</button>-->
-                        <!--<button class="btn btn-default seafood">З морепродуктами</button>-->
-                        <!--<button class="btn btn-default vega">Вега</button>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="row" id="pizza_list">-->
-
-                <!--<div class="col-sm-6 col-md-4">-->
-                    <!--<div class="thumbnail pizza-card">-->
-                        <!--<img src="assets/images/pizza_1.jpg">-->
-                        <!--<span class="label label-danger announce">New</span>-->
-
-                        <!--<div class="caption"><h3>Thumbnail label</h3>-->
-                            <!--<span class="description">Meat pizza</span>-->
-                            <!--<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
-
-                            <!--<div class="row pizza-inf">-->
-                                <!--<div class="col-xs-6">-->
-                                    <!--<div class="size">-->
-                                        <!--<img src="assets/images/size-icon.svg">-->
-                                        <!--<span>30</span>-->
-                                    <!--</div>-->
-                                    <!--<div class="weight">-->
-                                        <!--<img src="assets/images/weight.svg">-->
-                                        <!--<span>370</span>-->
-                                    <!--</div>-->
-
-                                    <!--<h3 class="price">99</h3>-->
-                                    <!--<span class="grn">грн</span>-->
-                                    <!--<button class="btn btn-warning">Купити</button>-->
-                                <!--</div>-->
-
-                                <!--<div class="col-xs-6">-->
-                                    <!--<div class="size">-->
-                                        <!--<img src="assets/images/size-icon.svg">-->
-                                        <!--<span>40</span>-->
-                                    <!--</div>-->
-                                    <!--<div class="weight">-->
-                                        <!--<img src="assets/images/weight.svg">-->
-                                        <!--<span>660</span>-->
-                                    <!--</div>-->
-
-                                    <!--<h3 class="price">169</h3>-->
-                                    <!--<span class="grn">грн</span>-->
-                                    <!--<button class="btn btn-warning">Купити</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--&lt;!&ndash;<p>&ndash;&gt;-->
-                            <!--&lt;!&ndash;<a href="#" class="btn btn-primary">Button 2</a>&ndash;&gt;-->
-                            <!--&lt;!&ndash;<a href="#" class="btn btn-default">Button 1</a>&ndash;&gt;-->
-                            <!--&lt;!&ndash;</p>&ndash;&gt;-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-
-                <!--<div class="col-sm-6 col-md-4">-->
-                    <!--<div class="thumbnail pizza-card">-->
-                        <!--<img src="assets/images/pizza_2.jpg">-->
-
-                        <!--<div class="caption"><h3>Thumbnail label</h3>-->
-
-                            <!--<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
-
-                            <!--<p>-->
-                                <!--<a href="#" class="btn btn-primary">Button 3</a>-->
-                                <!--<a href="#" class="btn btn-default">Button 4</a>-->
-                            <!--</p>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-
-                <!--<div class="col-sm-6 col-md-4">-->
-                    <!--<div class="thumbnail pizza-card">-->
-                        <!--<img src="assets/images/pizza_3.jpg">-->
-
-                        <!--<div class="caption"><h3>Thumbnail label</h3>-->
-
-                            <!--<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
-
-                            <!--<p>-->
-                                <!--<a href="#" class="btn btn-primary">Button 5</a>-->
-                                <!--<a href="#" class="btn btn-default">Button 6</a>-->
-                            <!--</p>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-
-    <!--</div>-->
-
-    <!--<div class="right_panel">-->
-        <!--<div class="top_right_panel">-->
-            <!--<h4>Замовлення-->
-                <!--<span class="label label-warning order-amount">3</span>-->
-            <!--</h4>-->
-            <!--<span class="clear">Очистити замовлення</span>-->
-        <!--</div>-->
-
-        <!--<div class="container central_panel">-->
-            <!--<div class="row ordered-element">-->
-                <!--<div class="col-ex-8 inf"></div>-->
-                <!--<div class="col-ex-4 image">-->
-                    <!--<img src="assets/images/pizza_1.jpg">-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="bottom_right_panel">-->
-            <!--<div class="order-sum">-->
-                <!--<span class="text">Сума замовлення</span>-->
-                <!--<span class="sum">924 грн</span>-->
-            <!--</div>-->
-            <!--<div class="order">-->
-                <!--<button class="btn btn-warning">Замовити</button>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-
-
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-<!--<div class="top-panel-container">-->
-    <!--<div class="top_panel">-->
-        <!--<div class="bookmark-top">-->
-            <!--<img src="assets/images/discount.svg">-->
-            <!--<span class="text">PIZZA KMA</span>-->
-        <!--</div>-->
-
-        <!--<div class="add_information">-->
-            <!--<div class="row top-inf">-->
-                <!--<span class="col-xs-12 col-sm-4 col-md-3" style="font-size: medium;">(044)222 5 222</span>-->
-                <!--<span class="col-sm-4 col-md-3 hidden-xs" style="font-size: x-small">24 години/7 днів на тиждень</span>-->
-                <!--<span class="col-sm-5 col-md-4 hidden-sm hidden-xs" style="font-size: small">Безкоштовна доставка піци</span>-->
-
-                <!--<div class="sing-in-button col-xs-12 col-sm-2 col-md-2">-->
-                    <!--<button class="btn-warning">Sign in</button>-->
-                <!--</div>-->
-            <!--</div>-->
-
-            <!--<div class="row bottom-inf">-->
-                <!--<span class="hidden-xs">Pizza</span>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
-
-
-<!--<div class="bookmark-bottom">-->
-    <!--<img src="assets/images/discount.svg">-->
-    <!--<span class="text">ЦЬОГО ТИЖНЯ НА ВСЕ</span>-->
-    <!--<span class="discount">-20%</span>-->
-<!--</div>-->
-
-
-
 
 <!-- jQuery JavaScript -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
@@ -662,6 +201,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <!--Own JavaScript -->
-<!--<script type="text/javascript"  src="assets/js/main.js"> </script>-->
+<script type="text/javascript"  src="assets/js/main.js"> </script>
 </body>
 </html>
