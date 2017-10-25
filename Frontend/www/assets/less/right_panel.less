@@ -1,83 +1,121 @@
 .right-panel{
-  position: fixed;
+  position: absolute;
+  //position: fixed;
   right: 0;
   top: 0;
 
   width: @right_panel_width;
   height:100%;
 
-  display: flex;
-  flex-flow: column;
+  //display: inline-block;
+  //float:left;
 
   .top-section{
     height:@top_panel_height;
-    width: 100%;
-    background-color: white;
-    flex: 0 1 @top_panel_height;
+    width: inherit;
+    //background: #b68684;
 
     margin:0;
 
         .label-section{
-          padding-top: 30px;
-          margin: auto;
+          width: inherit;
+          height: inherit;
+          padding-left: 10px;
+          padding-top: 25px;
+          position: relative;
         }
+    //padding:10px;
 
-        h4{
+        h5{
           display: inline-block;
-          padding: 0;
+          position: absolute;
           font-weight: bold;
+          //top:30px;
           margin:0;
           .order-amount{
             border-radius: 100%;
           }
         }
         .clear{
-          font-size: small;
+          font-size: x-small;
           color: #676663;
-          padding: 0;
-          cursor:pointer;
+          position: absolute;
+          right:20px;
+          //top:30px;
         }
   }
 
-  .middle-section{
-    overflow-y: auto;
-    width: 100%;
-    background: rgba(247, 247, 247, 1);
-    overflow-x: hidden;
-    flex: 1 1 auto;
+  .bottom-section{
+    height:@bottom_panel_height;
+    width: inherit;
+    position: absolute;
+    bottom:0;
+    background: rgba(255,255,255,0.84);
+    //box-sizing: border-box;
+    //padding-left: 30px;
+    border-top: 1px solid rgba(206, 206, 206, 0.84);
+    //padding-right: 5px;
 
-    .empty-cart{
-      padding-top: 40px;
-      text-align: center;
-      font-size: large;
+    .order-labels{
+      margin-bottom: 10px;
+      margin-top: 10px;
+      position: relative;
+
+      h6, h4{
+        display: inline-block;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      h6{
+        font-weight: bold;
+      }
+      h4{
+        position: absolute;
+        right: 20px;
+        //padding-left:50px;
+      }
     }
+
+    .order-button{
+      text-align: center;
+
+      button{
+        width: 70%;
+      }
+    }
+  }
+
+  .middle-section{
+    overflow-y: scroll;
+    height:inherit;
+    //height:inherit;
+    background: rgba(247, 247, 247, 1);
+    //margin-bottom: @bottom_panel_height;
+    overflow-x: hidden;
 
     .ordered-pizza{
       width:inherit;
-      height:auto;
+      height:100px;
       position: relative;
       border-bottom: 1px solid rgba(206, 206, 206, 0.84);
 
-      padding-bottom: 5%;
-
       .pizza-image{
-        width: 100px;
-        height:100px;
+        width: 30%;
+        height:90%;
+        //display: inline-block;
         position: absolute;
         top: 5px;
-        right:-50px;
+        right:-15%;
       }
 
       .ordered-inf{
         display: inline-block;
-        width:250px;
+        width:70%;
         height:inherit;
-        padding-right: 0;
-        padding-top: 15px;
+        padding-top: 10px;
 
-        h4{
+        h3{
           margin-top: 0px;
-          color: @mainColor;
         }
 
         .parameters{
@@ -85,11 +123,6 @@
         }
 
         .buttons{
-
-          .sum{
-            padding-top: 3px;
-            font-weight: bold;
-          }
 
           .cross{
             color:@mainColor;
@@ -110,42 +143,78 @@
     }
 
   }
-
-  .bottom-section{
-    height:@bottom_panel_height;
-    width: 100%;
-    background: rgba(255,255,255,0.84);
-    border-top: 1px solid rgba(206, 206, 206, 0.84);
-
-    flex: 0 1 @bottom_panel_height;
-
-    .order-labels{
-      margin-bottom: 10px;
-      margin-top: 10px;
-      position: relative;
-
-      h6, h4{
-        display: inline-block;
-        margin-bottom: 0;
-        margin-top: 0;
-      }
-      h6{
-        font-weight: bold;
-      }
-      h4{
-        position: absolute;
-        right: 20px;
-      }
-    }
-
-    .order-button-div{
-      text-align: center;
-
-      .order-button{
-        width: 70%;
-      }
-    }
-  }
-
-
 }
+
+//@panels_height:70px;
+//@right_panel_width: 250px;
+//
+//.right_panel{
+//  //float:left;
+//  width: @right_panel_width;
+//  height: 100%;
+//  position: fixed;
+//  //display: inline-block;
+//  top:0;
+//  right:0;
+//
+//  .top_right_panel{
+//    //width: @right_panel_width;
+//    height:@top_panel_height;
+//    position: fixed;
+//    top:0;
+//    background: white;
+//    padding-top: 10px;
+//    padding-bottom: 10px;
+//    padding-left: 5px;
+//    h4{
+//      display: inline-block;
+//      .order-amount{
+//        border-radius: 100%;
+//      }
+//    }
+//    .clear{
+//      font-size: x-small;
+//      color: #676663;
+//    }
+//  }
+//
+//  .central_panel{
+//    width:@right_panel_width;
+//    height:auto;
+//    margin-top: @top_panel_height;
+//    background: #b6b5b1;
+//    //overflow-y: scroll;
+//    //overflow-x: hidden;
+//  }
+//
+//  .bottom_right_panel{
+//    width: @right_panel_width;
+//    height: @panels_height;
+//    position: fixed;
+//    background: white;
+//    bottom: 0;
+//
+//    .order-sum{
+//      position: relative;
+//      padding:5px;
+//      font-weight: bold;
+//      .text{
+//        font-size: small;
+//      }
+//      .sum{
+//        position: absolute;
+//        right: 0;
+//        font-size: medium;
+//      }
+//    }
+//    .order{
+//      width: inherit;
+//      text-align: center;
+//      button{
+//        width: 60%;
+//      }
+//    }
+//
+//  }
+//}
+

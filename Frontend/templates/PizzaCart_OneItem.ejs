@@ -1,50 +1,9 @@
-<!--<div>-->
-    <!--<%= pizza.title %> (<%= size %>)-->
-    <!--<div>Ціна: <%= pizza[size].price %> грн.</div>-->
-    <!--<div>-->
-        <!--<button class="btn btn-danger minus">-</button>-->
-        <!--<span class="label label-default"><%= quantity %></span>-->
-        <!--<button class="btn btn-success plus">+</button>-->
-    <!--</div>-->
-<!--</div>-->
-<div class="ordered-pizza">
-    <div class="container ordered-inf">
-        <h4><%= pizza.title %>
-            <% if(size == "small_size"){ %>
-            (Мала)
-            <% } else if(size == "big_size") {%>
-            (Велика)
-            <%}%>
-        </h4>
-        <div class="row parameters">
-            <span class="col-xs-4">
-                <img src="../www/assets/images/size-icon.svg">
-                <span><%= pizza[size].size %></span>
-            </span>
-
-            <span class="col-xs-5">
-                <img src="../www/assets/images/weight.svg">
-                <span><%= pizza[size].weight %></span>
-            </span>
-        </div>
-
-        <div class="row buttons">
-            <span class="col-xs-4 sum"><%= pizza[size].price %>грн</span>
-            <div class="col-xs-6">
-                <button class="btn btn-xs btn-danger minus">
-                    <span class="glyphicon glyphicon-minus"></span>
-                </button>
-                <span class="label-count"><%= quantity %></span>
-                <button class="btn btn-xs btn-success plus">
-                    <span class="glyphicon glyphicon-plus"></span>
-                </button>
-            </div>
-            <button class="col-xs-1 btn btn-xs btn-default cross">
-                <span class="glyphicon glyphicon-remove"></span>
-            </button>
-
-        </div>
-
+<div>
+    <%= pizza.title %> (<%= size %>)
+    <div>Ціна: <%= pizza[size].price %> грн.</div>
+    <div>
+        <button class="btn btn-danger minus">-</button>
+        <span class="label label-default"><%= quantity %></span>
+        <button class="btn btn-success plus">+</button>
     </div>
-    <img class="pizza-image" src="<%= pizza.icon %>">
 </div>
