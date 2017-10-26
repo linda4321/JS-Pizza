@@ -1,16 +1,13 @@
 .main-page{
-  width: inherit;
-  height: 600px;
+  width: 100%;
   display: inline-block;
-  //height:inherit;
-  margin-right: @right_panel_width;
-  padding-top: @top_panel_height;
 
-  overflow-y: scroll;
+  padding-left: 50px;
+  background-color: rgba(237, 209, 191, 0.47);
 
   .menu{
-    height:100px;
     text-align: center;
+    margin-bottom: 10px;
 
     .buttons-container{
       display: inline-block;
@@ -27,48 +24,33 @@
           color:white;
         }
       }
-      //margin: 0;
     }
 
-    .title{
-
+    .title-span{
+      display: inline-block;
     }
     .pizza-amount{
       display: inline-block;
       border-radius: 100%;
+      font-size: medium;
     }
   }
 
+  .main-panel{
+    margin: auto;
+    text-align: center;
+    padding-right: @right_panel_width+20px;
+    padding-top: @top_panel_height;
+    max-width: 1354px;
+  }
 }
-//.main_page{
-//  margin-right: @right_panel_width;
-//  margin-top: @top_panel_height;
-//  //overflow-y: scroll;
-//}
-//
-//.menu{
-//  height:100px;
-//}
-//.title{
-//  text-align: center;
-//  padding-top: 10px;
-//
-//  h3{
-//    margin-top: 0;
-//  }
-//  .pizza-amount{
-//    display: inline-block;
-//    border-radius: 100%;
-//  }
-//}
-//
-//.buttons-container{
-//  text-align: center;
-//  width:100%;
-//}
-//
-//
-//#pizza_list{
-//  //margin-right: @right_panel_width;
-//
-//}
+
+.add-inf{
+  background-color: white;
+  color: rgb(117, 115, 113);
+  border-top: 1px solid rgba(117, 115, 113, 0.51);
+  margin-right: @right_panel_width;
+  text-align: center;
+  width: inherit;
+  padding: 20px;
+}
