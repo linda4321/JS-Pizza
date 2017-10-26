@@ -316,6 +316,7 @@ function updateCart() {
         var html_code = Templates.PizzaCart_OneItem(cart_item);
 
         var $node = $(html_code);
+        $node.find(".sum").text(get_cart_pizza_price(cart_item)*cart_item.quantity);
 
         $node.find(".plus").click(function(){
             //Збільшуємо кількість замовлених піц
