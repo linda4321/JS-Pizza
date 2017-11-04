@@ -212,8 +212,6 @@ $(function(){
 
     PizzaCart.initialiseCart();
     PizzaMenu.initialiseMenu();
-
-
 });
 },{"./Pizza_List":1,"./pizza/PizzaCart":5,"./pizza/PizzaMenu":6}],5:[function(require,module,exports){
 /**
@@ -316,7 +314,7 @@ function updateCart() {
         var html_code = Templates.PizzaCart_OneItem(cart_item);
 
         var $node = $(html_code);
-        $node.find(".sum").text(get_cart_pizza_price(cart_item)*cart_item.quantity);
+        $node.find(".sum").text(cart_item.pizza[cart_item.size].price*cart_item.quantity);
 
         $node.find(".plus").click(function(){
             //Збільшуємо кількість замовлених піц

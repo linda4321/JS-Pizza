@@ -98,7 +98,7 @@ function updateCart() {
         var html_code = Templates.PizzaCart_OneItem(cart_item);
 
         var $node = $(html_code);
-        $node.find(".sum").text(get_cart_pizza_price(cart_item)*cart_item.quantity);
+        $node.find(".sum").text(cart_item.pizza[cart_item.size].price*cart_item.quantity);
 
         $node.find(".plus").click(function(){
             //Збільшуємо кількість замовлених піц
@@ -121,7 +121,7 @@ function updateCart() {
         });
 
         $cart.append($node);
-        addToSum(get_cart_pizza_price(cart_item)*cart_item.quantity);
+        addToSum(cart_item.pizza[cart_item.size].price*cart_item.quantity);
     }
 
     Cart.forEach(showOnePizzaInCart);
@@ -138,14 +138,6 @@ function initializeButtons(){
     clearButton.click(function(){
         clearCart();
     });
-}
-
-function get_cart_pizza_price(cart_item){
-    if(cart_item.size === PizzaSize.Big){
-        return cart_item.pizza.big_size.price;
-    }else {
-        return cart_item.pizza.small_size.price;
-    }
 }
 
 function clearSum(){
