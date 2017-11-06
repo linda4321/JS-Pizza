@@ -3,7 +3,9 @@
  */
 var Templates = require('../Templates');
 var PizzaCart = require('./PizzaCart');
-var Pizza_List = require('../Pizza_List');
+var API = require('../API');
+// var Pizza_List = require('../Pizza_List');
+var Pizza_List = [];
 
 //HTML едемент куди будуть додаватися піци
 var $pizza_list = $("#pizza_list");
@@ -27,6 +29,7 @@ function showPizzaList(list) {
 
     //Онволення однієї піци
     function showOnePizza(pizza) {
+        // console.log(pizza.title);
         var html_code = Templates.PizzaMenu_OneItem({pizza: pizza});
 
         var $node = $(html_code);
@@ -40,7 +43,7 @@ function showPizzaList(list) {
 
         $pizza_list.append($node);
     }
-
+    // console.log(list.length);
     list.forEach(showOnePizza);
     number_value.text(list.length);
 }
@@ -63,8 +66,19 @@ function filterPizza(filter) {
 
 function initialiseMenu() {
     //Показуємо усі піци
-    showPizzaList(Pizza_List);
-    initializeButtons();
+    console.log("initialize menu");
+    API.getPizzaList(function (err, user_data) {
+
+        if(err){
+            alert(err.toString());
+            console.log("failed");
+            return;
+        }
+
+        Pizza_List = user_data;
+        showPizzaList(Pizza_List);
+        initializeButtons();
+    });
 }
 function filterVegaPizza(){
     var pizza_shown = [];
@@ -106,6 +120,7 @@ function initializeButtons(){
             });
         }
     });
+
 }
 
 exports.filterPizza = filterPizza;

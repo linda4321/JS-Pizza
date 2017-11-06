@@ -1,0 +1,64 @@
+<% include common/header.ejs %>
+
+
+<div class="container main-page">
+
+    <div class="main-panel">
+        <div class="menu">
+            <div class="title">
+                <h3 class="title-span">Усі піци</h3>
+                <h3 class="label label-warning pizza-amount">8</h3>
+            </div>
+
+            <ul class="nav nav-pills buttons-container">
+                <li class="active all"><a href="#">Усі</a></li>
+                <li class="meat"><a href="#">М'ясні</a></li>
+                <li class="pineapple"><a href="#">З ананасами</a></li>
+                <li class="mushroom"><a href="#">З грибами</a></li>
+                <li class="ocean"><a href="#">З морепродуктами</a></li>
+                <li class="vega"><a href="#">Вега</a></li>
+            </ul>
+
+        </div>
+
+        <div class="row pizza-list" id="pizza_list"></div>
+    </div>
+
+</div>
+
+<% include common/topBottomPanel.ejs %>
+<div class="right-panel">
+    <div class="container top-section">
+        <div class="row label-section">
+            <h4 class="col-xs-7">Замовлення
+                <span class="label label-warning order-amount">3</span>
+            </h4>
+            <span class="col-xs-5 clear">Очистити замовлення</span>
+        </div>
+    </div>
+
+    <div class="middle-section" id="cart">
+
+        <div class="empty-cart">
+            <p>В холодильнику пусто?</p>
+            <p>Замовляйте піцу!</p>
+        </div>
+    </div>
+
+    <div class="container bottom-section">
+        <div class="row order-area">
+            <div class="col-xs-12 order-labels">
+                <h6>Сума замовлення</h6>
+                <h4>
+                    <span class="total-sum">924 </span>
+                    грн
+                </h4>
+            </div>
+            <div class="col-xs-12 order-button-div">
+                <button class="btn btn-warning order-button">Замовити</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% include common/footer.ejs %>

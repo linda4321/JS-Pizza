@@ -1,0 +1,94 @@
+<% include common/header.ejs %>
+
+
+<div class="container-fluid input-area">
+    <div class="form">
+        <h3 class="form-header">1. Контактні дані</h3>
+        <div class="row">
+            <div class="input col-md-7">
+                <div class="row form-input name-input">
+                    <label class="col-sm-2">Ім'я</label>
+                    <div class="col-sm-10">
+                        <input type="text" placeholder="Ім'я Прізвище" id="name">
+                    </div>
+                    <span class="incorrect-input in-name" style="display:none">Введіть тільки власне ім'я</span>
+                </div>
+                <div class="row form-input tel-input">
+                    <label class="col-sm-2">Телефон</label>
+                    <div class="col-sm-10">
+                        <input type="tel" placeholder="+380994010999" id="tel">
+                    </div>
+                    <span class="incorrect-input in-tel" style="display:none">Введіть номер телефону у форматі +380 або почніть з 0</span>
+                </div>
+                <div class="row form-input address-input">
+                    <label class="col-sm-2">Адреса</label>
+                    <div class="col-sm-10">
+                        <input type="text" placeholder="Київ, вул. Спаська, 2" id="address">
+                    </div>
+                    <span class="incorrect-input in-address" style="display:none">Введіть адресу доставки піци</span>
+                </div>
+            </div>
+            <div class="inf col-md-5">
+                <div class="inf-area">
+                    <h4>Інформація про замовлення</h4>
+                    <div>
+                        <b>Приблизний час доставки:</b>
+                        <span>невідомий</span>
+                    </div>
+                    <div>
+                        <b>Адреса доставки:</b>
+                        <span>невідомий</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row button-container">
+            <div class="button">
+                <button class="btn btn-warning btn-order">Далі
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="google-maps">
+
+        </div>
+    </div>
+</div>
+
+
+<% include common/topBottomPanel.ejs %>
+
+<div class="right-panel">
+    <div class="container top-section">
+        <div class="row label-section">
+            <h4 class="col-xs-7">Замовлення
+                <span class="label label-warning order-amount">3</span>
+            </h4>
+        </div>
+    </div>
+
+    <div class="middle-section" id="cart_ordered">
+
+
+
+    </div>
+
+    <div class="container bottom-section">
+        <div class="row order-area">
+            <div class="col-xs-12 order-labels">
+                <h6>Сума замовлення</h6>
+                <h4>
+                    <span class="total-sum">924 </span>
+                    грн
+                </h4>
+            </div>
+            <div class="col-xs-12 order-button-div">
+                <button class="btn btn-default order-button">Редагувати замовлення</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% include common/footer.ejs %>
