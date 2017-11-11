@@ -12,3 +12,9 @@ exports.orderPage = function(req, res) {
         pageTitle: 'Замовлення піци'
     });
 };
+
+// exports.payPage = function(req, res) {
+//     res.render('payPage', {
+//         pageTitle: 'Оплата замовлення'
+//     });
+// };

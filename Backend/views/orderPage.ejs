@@ -1,5 +1,6 @@
 <% include common/header.ejs %>
 
+<div id="liqpay"></div>
 
 <div class="container-fluid input-area">
     <div class="form">
@@ -31,13 +32,13 @@
             <div class="inf col-md-5">
                 <div class="inf-area">
                     <h4>Інформація про замовлення</h4>
-                    <div>
+                    <div id="time_inf">
                         <b>Приблизний час доставки:</b>
-                        <span>невідомий</span>
+                        <span id="time">невідомий</span>
                     </div>
-                    <div>
+                    <div id="address_inf">
                         <b>Адреса доставки:</b>
-                        <span>невідомий</span>
+                        <span id="address_text">невідомий</span>
                     </div>
                 </div>
             </div>
@@ -51,7 +52,7 @@
             </div>
         </div>
 
-        <div class="google-maps">
+        <div class="google-maps" id="googleMap">
 
         </div>
     </div>

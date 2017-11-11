@@ -21,60 +21,67 @@
     }
   }
 
-  .form-input{
-    //width: 100%;
-    padding-left: 10px;
-    margin-bottom: 10px;
-
-    label{
-      padding-top: 10px;
-    }
-
-    input{
-      height: 40px;
-      width: 100%;
+  .form{
+    .form-input{
+      //width: 100%;
       padding-left: 10px;
-      padding-right: 10px;
-      border-radius: 5px;
-    }
+      margin-bottom: 10px;
 
-    .incorrect-input{
-      padding-left: 100px;
-      color:red;
-      //font-family: ;
-    }
-  }
+      label{
+        padding-top: 10px;
+      }
 
-  .inf{
-    height: inherit;
+      input{
+        height: 40px;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 5px;
+      }
 
-    .inf-area{
-      border: 1px solid rgba(210, 202, 192, 0.59);
-      padding: 20px;
-      border-radius: 3px;
-      border-left: 5px solid #ec890e !important;
-
-      div{
-        margin-bottom: 10px;
+      .incorrect-input{
+        padding-left: 100px;
+        color:red;
+        //font-family: ;
       }
     }
-  }
 
-  .button-container{
-    position: relative;
-    height:70px;
-    padding-top: 20px;
+    .inf{
+      height: inherit;
 
-    .button{
-      margin-right: 20px;
-      width: 100px;
-      position: absolute;
-      right: 0;
+      .inf-area{
+        border: 1px solid rgba(210, 202, 192, 0.59);
+        padding: 20px;
+        border-radius: 3px;
+        border-left: 5px solid #ec890e !important;
 
-      button{
-        width: inherit;
+        div{
+          margin-bottom: 10px;
+        }
       }
-      //font-size: 25px;
+    }
+
+    .button-container {
+      position: relative;
+      height: 70px;
+      padding-top: 20px;
+
+      .button {
+        margin-right: 20px;
+        width: 100px;
+        position: absolute;
+        right: 0;
+
+        .btn-order {
+          width: inherit;
+        }
+        //font-size: 25px;
+      }
+    }
+
+    .google-maps{
+      width: inherit;
+      height:350px;
     }
   }
 }

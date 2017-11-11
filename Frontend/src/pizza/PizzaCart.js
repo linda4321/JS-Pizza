@@ -155,12 +155,11 @@ function addToSum(add_price){
     $sum.text(sum);
 }
 
+
 exports.removeFromCart = removeFromCart;
 exports.addToCart = addToCart;
 
 exports.initialiseCart = initialiseCart;
 exports.getPizzaInCart = getPizzaInCart;
-
-exports.Cart = Cart;
 
 exports.PizzaSize = PizzaSize;

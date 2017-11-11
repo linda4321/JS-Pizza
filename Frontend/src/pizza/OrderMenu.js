@@ -1,5 +1,7 @@
 var Templates = require('../Templates');
 var PizzaCart = require('./PizzaCart');
+var Google_Maps = require('./../GoogleMaps');
+var Liq_Pay = require('./../LiqPay');
 
 var API = require('../API');
 var $cart_ordered = $("#cart_ordered");
@@ -90,6 +92,7 @@ function initializeButtons(){
             errStyle($address_input_div, $(".in-address"));
         }else{
             corrStyle($address_input_div, $(".in-address"));
+            Google_Maps.findOnMap(address);
         }
     });
 
@@ -99,6 +102,7 @@ function initializeButtons(){
         var is_valid_address = checkAddressInput();
         if(is_valid_name&&is_valid_tel&&is_valid_address){
             var order_data={
+                ordered_pizza:ordered_cart,
                 name:name,
                 tel:tel,
                 address:address
@@ -108,8 +112,9 @@ function initializeButtons(){
                     alert(err.toString());
                     return;
                 }
+                Liq_Pay.liqpay(resp_data.data, resp_data.signature);
                 console.log(resp_data);
-            });
+        });
         }else{
             if(!is_valid_name)
                 errStyle($name_input_div, $(".in-name"));
